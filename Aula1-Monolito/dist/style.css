@@ -1,0 +1,7 @@
+table{
+    padding: 1rem;
+    background-color: aquamarine;
+}
+table tr:first{
+    font-weight: bold;
+}
