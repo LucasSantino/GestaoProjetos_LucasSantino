@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['*']
 #quais serviços podem se comunicar com o django (frontend, por exempço)
 CORS_ALLOW_ALL_ORIGINS = True
 # quais servidores podem fazer operaçoes NSAFE METHODS
-CSRF_TRUSTED_ORIGIN =[]
+CSRF_TRUSTED_ORIGIN =['http://lucas-santino-manflix-senai-gtgkevfzdreuf9az.westus3-01.azurewebsites.net']
 
 
 # Application definition
@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+    'rest_framework.authtoken',
+    'djoser',
     'app',
 ]
 
@@ -141,3 +143,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
