@@ -1,4 +1,4 @@
 {
-    "appService.defaultWebAppToDeploy": "/subscriptions/250ae9c3-6c33-4030-b72a-ed22fce22920/resourceGroups/lucas-santino-manflix-senai/providers/Microsoft.Web/sites/lucas-santino-manflix-senai",
-    "appService.deploySubpath": "1-MANFLIX\\Aula2-CRIADO_CUSTOM_USER"
+    "appService.defaultWebAppToDeploy": "/subscriptions/250ae9c3-6c33-4030-b72a-ed22fce22920/resourceGroups/manglix-lucas-santino/providers/Microsoft.Web/sites/manflix-lucas-santino",
+    "appService.deploySubpath": "1-MANFLIX\\Aula3-DEPLOY"
 }
